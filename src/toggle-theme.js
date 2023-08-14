@@ -1,15 +1,17 @@
-const lightTheme = ()=>{
+//Função troca de tema e logo
+
+const darkTheme = ()=>{
   document.documentElement.setAttribute('data-theme', 'light');
   localStorage.setItem('data-theme', 'light');
 }
 
-const darkTheme = ()=>{
+const lightTheme = ()=>{
   document.documentElement.setAttribute('data-theme', 'dark');
   localStorage.setItem('data-theme', 'dark');
 }
 
 let theme = localStorage.getItem('data-theme');
-if (theme == 'light') lightTheme();
+if (theme == 'light') darkTheme();
 
 const checkboxTheme = document.getElementById('checkbox');
 
@@ -28,9 +30,21 @@ checkboxTheme.addEventListener('change', () =>{
   }
   
   if (checkboxTheme.checked) {
-    logo.setAttribute("src", "/assets/img/tercio_black.png");
-  } else {
     logo.setAttribute("src", "/assets/img/tercio_white.png");
+  } else {
+    logo.setAttribute("src", "/assets/img/tercio_black.png");
 
   }
 });
+
+//Desmarcar CheckBox (tema) no refresh da página
+
+function desmarcarCheckboxes() {
+  var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  
+  checkboxes.forEach(function(checkbox) {
+      checkbox.checked = false;
+  });
+}
+
+window.onload = desmarcarCheckboxes;

@@ -21,14 +21,15 @@ html[data-theme="dark"]{
 body{ 
     background-color: var(--background); 
     color: var(--text);
-    transition: background 0.35s linear; 
+    transition: background 0.35s linear;
+    display: flex;
+    justify-content: center; 
 }
 
 
 .center{
     display: flex;
     max-width: 1200px;
-    margin: 0 auto;
     flex-wrap: wrap;
 }
 
@@ -40,7 +41,10 @@ header{
     position: fixed;
 }
 
-nav{ display: flex;
+nav{ 
+    display: flex;
+    position: fixed;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
     background-color: var(--nav);
@@ -51,8 +55,6 @@ nav{ display: flex;
 nav img{ width: 140px; transition: 0.25s; cursor: pointer;}
 
 nav img:hover { opacity: 0.9; }
-
-.items-nav{ margin-top: 5px;}
 
 .items-nav a{
     color: var(--text);
@@ -87,9 +89,91 @@ nav img:hover { opacity: 0.9; }
     margin-left: 10px;
 }
 
-section.main{
-    margin: 200px 0 200px 0;
+.container{
+    margin-top: 38vh;
+    height: 65vh;
+    border-bottom: 2px solid var(--text);
 }
+.title h1{
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+.title strong{
+    font-weight: 700;
+    color: #ed3654;
+    transition: all 0.3s ease;
+}
+
+.title strong:hover{ text-shadow: 0 0 7px; }
+
+.title p{
+    margin-top: 5vh;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.links{ 
+    margin-top: 10vh; 
+    display: flex; 
+    justify-content: center;
+}
+
+.links button{
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 18px;
+    background-color: #ed3654;
+    padding: 10px 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color:#efefef;
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.links a img{ 
+    width: 35px; 
+    margin: 0 10px 0 10px; 
+    transition: all 0.3s ease;
+    filter: grayscale(100%); 
+}
+
+.links a img:hover, .links button:hover{
+    filter: grayscale(0%);
+    text-shadow: 0 0 10px;
+
+}
+
+.scroll {
+    margin: 12vh auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1240px){
     .center{
