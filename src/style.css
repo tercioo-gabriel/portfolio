@@ -22,14 +22,16 @@ body{
     background-color: var(--background); 
     color: var(--text);
     transition: background 0.35s linear;
-    display: flex;
-    justify-content: center; 
+    /* display: flex;
+    justify-content: center;  */
 }
 
 
 .center{
     display: flex;
     max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -91,8 +93,8 @@ nav img:hover { opacity: 0.9; }
 
 .container{
     margin-top: 38vh;
-    height: 65vh;
-    border-bottom: 2px solid var(--text);
+    /* margin-left: 0;
+    margin-right: 0; */
 }
 .title h1{
     font-size: 60px;
@@ -145,14 +147,18 @@ nav img:hover { opacity: 0.9; }
 .links a img:hover, .links button:hover{
     filter: grayscale(0%);
     text-shadow: 0 0 10px;
+    transform: translateY(-5px);
 
 }
 
 .scroll {
-    margin: 12vh auto;
+    margin: 120px auto;
 }
 
-
+.about-me{
+    border-top: 10px solid #ed3654;
+    margin-top: 5vh;
+}
 
 
 
