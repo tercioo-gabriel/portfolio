@@ -8,6 +8,7 @@ html{
     --background: #efefef;
     --nav: #e3e3e3;
     --text: #383838;
+    --text2: #5a5a5a;
     --bg-button: #494949;
 }
 
@@ -15,6 +16,7 @@ html[data-theme="dark"]{
     --background:#383838 ;
     --nav: #333333;
     --text: #efefef;
+    --text2: #c2c2c2;
     --bg-button: #bebebe;
 }
 
@@ -22,10 +24,7 @@ body{
     background-color: var(--background); 
     color: var(--text);
     transition: background 0.35s linear;
-    /* display: flex;
-    justify-content: center;  */
 }
-
 
 .center{
     display: flex;
@@ -46,11 +45,14 @@ header{
 nav{ 
     display: flex;
     position: fixed;
+    z-index: 1;
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--nav);
-    height: 65px;
+    backdrop-filter: blur(6px) saturate(110%);
+    -webkit-backdrop-filter: blur(6px) saturate(110%);
+    background-color: rgba(17, 25, 40, 0);
+    height: 80px;
     box-shadow: 0px 8px 6px -2px rgba(0,0,0,0.15); 
 }
 
@@ -91,24 +93,22 @@ nav img:hover { opacity: 0.9; }
     margin-left: 10px;
 }
 
-.container{
-    margin-top: 38vh;
-    /* margin-left: 0;
-    margin-right: 0; */
-}
+.container{ margin-top: 33vh; }
+
 .title h1{
     font-size: 60px;
     font-weight: 500;
     text-align: center;
     width: 100%;
 }
-.title strong{
+.title a{
     font-weight: 700;
+    text-decoration: none;
     color: #ed3654;
     transition: all 0.3s ease;
 }
 
-.title strong:hover{ text-shadow: 0 0 7px; }
+.title a:hover{ text-shadow: 0 0 7px; }
 
 .title p{
     margin-top: 5vh;
@@ -117,7 +117,7 @@ nav img:hover { opacity: 0.9; }
 }
 
 .links{ 
-    margin-top: 10vh; 
+    margin-top: 4vh;
     display: flex; 
     justify-content: center;
 }
@@ -151,16 +151,19 @@ nav img:hover { opacity: 0.9; }
 
 }
 
-.scroll {
-    margin: 120px auto;
-}
+.scroll { margin: 230px auto 140px; }
 
 .about-me{
     border-top: 10px solid #ed3654;
     margin-top: 5vh;
+    margin-bottom: 5000px;
 }
-
-
+.myself{
+    display: flex;
+}
+.myself img{
+    width: 200px;
+}
 
 
 
@@ -188,5 +191,8 @@ nav img:hover { opacity: 0.9; }
     .items-nav a{
         margin: 0 3x 0 3px;
         font-size: 13px;
+    }
+    nav img{
+        width: 120px;
     }
 }
