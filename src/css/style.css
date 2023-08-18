@@ -152,7 +152,7 @@ nav img:hover { opacity: 0.9; }
     transform: translateY(-5px);
 }
 
-.scroll { margin: 28vh auto 140px; }
+.scroll { margin: 22vh auto 15vh; }
 
 .about-me{
     background-color: var(--background2);
@@ -166,19 +166,19 @@ nav img:hover { opacity: 0.9; }
 }
 
 .about-me h1{
-    margin-top: 10vh;
+    margin-top: 12vh;
     margin-bottom: 12vh;
     font-size: 50px;
 }
 
 .myself{
     display: flex;
-    margin-bottom: 15vh;
+    margin-bottom: 16vh;
 }
 
 .myself p{
     font-size: 20px;
-    width: 500px;
+    width: 520px;
     margin-top: 10px;
     margin-left: 25vh;
     text-align: end;
@@ -210,9 +210,7 @@ nav img:hover { opacity: 0.9; }
     }
 }
 
-.photo:hover::before{
-    inset: -10px 0px;
-}
+.photo:hover::before{ inset: -10px 0px; }
 
 .photo::after{
     content: '';
@@ -242,25 +240,45 @@ nav img:hover { opacity: 0.9; }
     flex-direction: column;
     align-items: center;
 }
+
 .skills .center h1{
     font-size: 50px;
 }
+
 .skills .center>p{
     margin-top: 2vh;
     opacity: 0.5;
 }
-.input{
-    margin-top: 5vh;
-    padding: 10px 15px;
-    width: 50%;
-    height: 12vh;
-    border: 2px solid #5a5a5a;
-    border-radius: 20px;
-    opacity: 0.85;    
-    color: var(--text);
-}
+
 .hard-skills{
-    margin: 999px 0;
+    margin: 19px 0;
+    display: flex;
+    gap: 120px;
+    flex-flow: row wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ae00ff;
+    transition: 0.65s ease-in-out;
+}
+
+.card:hover{
+    width: 20vh;
+    height: 25vh;
+}
+.card img{
+    width: 70px;
+    height: 70px;
+    gap: 500px;
+}
+.card img:hover{
+    justify-content: center;
 }
 
 
@@ -285,6 +303,17 @@ nav img:hover { opacity: 0.9; }
 
 
 
+
+
+
+
+
+
+
+
+section.footer{
+    margin: 1000px 0;
+}
 
 @media screen and (max-width: 1240px){
     .center{
@@ -298,6 +327,7 @@ nav img:hover { opacity: 0.9; }
         width: 120px;
     }
 }
+
 @media screen and (max-width: 950px){
     .about-me h1{
         margin-bottom: 60px;
@@ -311,5 +341,10 @@ nav img:hover { opacity: 0.9; }
     .myself p{
         text-align: center;
         margin: 5vh 0;
+    }
+    .input{
+        padding: 10px 15px;
+        width: 70%;
+        height: calc(25vh * 2);
     }
 }
