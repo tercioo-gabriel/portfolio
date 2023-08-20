@@ -48,3 +48,66 @@ function desmarcarCheckboxes() {
 }
 
 window.onload = desmarcarCheckboxes;
+
+//Função de clique para exibir habilidades
+
+const html = document.querySelector('.card1');
+const css = document.querySelector('.card2');
+const js = document.querySelector('.card3');
+const ts = document.querySelector('.card4');
+const ps = document.querySelector('.card5');
+const git = document.querySelector('.card6');
+
+const pHtml = document.querySelector('.p1');
+const pCss = document.querySelector('.p2');
+const pJs = document.querySelector('.p3');
+const pTs = document.querySelector('.p4');
+const pPs = document.querySelector('.p5');
+const pGit = document.querySelector('.p6');
+
+
+function mouseOverText() {
+  html.addEventListener('mouseover', () =>{
+    pHtml.style.opacity = 1;
+  });
+  html.addEventListener('mouseout', () =>{
+    pHtml.style.opacity = 0;
+  });
+
+  css.addEventListener('mouseover', () =>{
+    pCss.style.opacity = 1;
+  });
+  css.addEventListener('mouseout', () =>{
+    pCss.style.opacity = 0;
+  });
+  
+  js.addEventListener('mouseover', () =>{
+    pJs.style.opacity = 1;
+  });
+  js.addEventListener('mouseout', () =>{
+    pJs.style.opacity = 0;
+  });
+
+  ts.addEventListener('mouseover', () =>{
+    pTs.style.opacity = 1;
+  });
+  ts.addEventListener('mouseout', () =>{
+    pTs.style.opacity = 0;
+  });
+
+  ps.addEventListener('mouseover', () =>{
+    pPs.style.opacity = 1;
+  });
+  ps.addEventListener('mouseout', () =>{
+    pPs.style.opacity = 0;
+  });
+
+  git.addEventListener('mouseover', () =>{
+    pGit.style.opacity = 1;
+  });
+  git.addEventListener('mouseout', () =>{
+    pGit.style.opacity = 0;
+  });
+}
+
+mouseOverText();

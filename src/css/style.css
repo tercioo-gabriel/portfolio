@@ -7,7 +7,7 @@
 html{
     --background: #efefef;
     --background2: #ebebeb;
-    --nav: #e3e3e3;
+    --bg-skill: #f3f3f3;
     --text: #383838;
     --text2: #5a5a5a;
     --bg-button: #494949;
@@ -16,7 +16,7 @@ html{
 html[data-theme="dark"]{
     --background:#383838;
     --background2: #272727;
-    --nav: #333333;
+    --bg-skill: #353535;
     --text: #efefef;
     --text2: #c2c2c2;
     --bg-button: #bebebe;
@@ -168,7 +168,7 @@ nav img:hover { opacity: 0.9; }
 .about-me h1{
     margin-top: 12vh;
     margin-bottom: 12vh;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .myself{
@@ -177,7 +177,7 @@ nav img:hover { opacity: 0.9; }
 }
 
 .myself p{
-    font-size: 20px;
+    font-size: 18px;
     width: 520px;
     margin-top: 10px;
     margin-left: 25vh;
@@ -243,7 +243,7 @@ nav img:hover { opacity: 0.9; }
     align-items: center;
 }
 
-.skills .center h1{ font-size: 50px; }
+.skills .center h1{ font-size: 40px; }
 
 .skills .center>p{
     margin-top: 2vh;
@@ -251,42 +251,53 @@ nav img:hover { opacity: 0.9; }
     opacity: 0.5;
 }
 
+.box-skills{
+    width: 850px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.05);
+}
+.box-skills p{
+    padding: 20px;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: 0.35s;
+}
+
 .hard-skills{
     margin-top: 55px;
+    margin-bottom: 45px;
+    padding: 0 5%;
     display: flex;
-    gap: 120px;
+    gap: 5px;
+    justify-content: center;
     flex-flow: row wrap;
-    transition: 0.95s;
 }
 
-.hard-skills:hover { gap: 90px; }
-
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
+.card1, .card2, .card3, .card4, .card5, .card6{
+    padding: 35px;
+    margin-top: 10px;
     color: #ed3654;
-    filter: grayscale(100%);
-    transition: 0.65s ease-in-out;
+    box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.40s ease-in-out;
 }
 
-.card p{ margin: 20px 10px 0 10px; }
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover{
+    transform: translateY(-15px);
+}
+.card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img{ width: 70px; }
 
-.card:hover{
-    width: 20vh;
-    height: 25vh;
-    filter: grayscale(0%);
-    border-radius: 20px;
-}
-.card img{
-    margin-top: 15px;
-    width: 70px;
-    height: 70px;
-}
-.card img:hover{ justify-content: center; }
+
+
+
+
+
 
 .projects .center{
     margin: 500px 0;
@@ -356,5 +367,9 @@ section.footer{
         padding: 10px 15px;
         width: 70%;
         height: calc(25vh * 2);
+    }
+    .box-skills{
+        width: 80%;
+        height: 100px;
     }
 }
