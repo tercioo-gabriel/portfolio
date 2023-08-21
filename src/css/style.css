@@ -158,6 +158,7 @@ nav img:hover { opacity: 0.9; }
     background-color: var(--background2);
     margin-top: 3vh;
     margin-bottom: 10vh;
+    box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.05);
 }
 
 .about-me .center{
@@ -166,28 +167,28 @@ nav img:hover { opacity: 0.9; }
 }
 
 .about-me h1{
-    margin-top: 12vh;
-    margin-bottom: 12vh;
+    margin-top: 8vh;
+    margin-bottom: 10vh;
     font-size: 40px;
 }
 
 .myself{
     display: flex;
-    margin-bottom: 16vh;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .myself p{
     font-size: 18px;
     width: 520px;
     margin-top: 10px;
-    margin-left: 25vh;
     text-align: end;
 }
 
 .photo{
     position: relative;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -236,6 +237,49 @@ nav img:hover { opacity: 0.9; }
     height: 100%;
 }
 
+.studies{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.studies .empty{ width: 250px; }
+
+.courses{
+    padding: 25px 0;
+    width: 520px;
+    text-align: end;
+    border-radius: 10px;
+}
+
+.courses div{
+    display:flex;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+.fs{ margin-top: 15px; }
+
+.courses h3{ color: #ed3654; }
+
+.courses h2 { margin: 20px 0; }
+
+.courses div h4, .courses div h3{
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.courses div p{
+    font-style: italic;
+    margin-top: 4px;
+    opacity: 0.85;
+}
+.courses p a{
+    text-decoration: none;
+    color: #ed3654;
+}
+.certificados{ margin-top: 10px; opacity: 0.85; }
+
 .skills { margin: 10vh 0; }
 
 .skills .center{
@@ -246,8 +290,7 @@ nav img:hover { opacity: 0.9; }
 .skills .center h1{ font-size: 40px; }
 
 .skills .center>p{
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin: 2vh 0;
     opacity: 0.5;
 }
 
@@ -256,6 +299,7 @@ nav img:hover { opacity: 0.9; }
     height: 100px;
     overflow: hidden;
     position: relative;
+    align-items: center;
     border-radius: 8px;
     box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.05);
 }
@@ -291,9 +335,9 @@ nav img:hover { opacity: 0.9; }
 .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover{
     transform: translateY(-15px);
 }
-.card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img{ width: 70px; }
+.card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img{ width: 65px; }
 
-
+strong{  color: #ed3654; text-shadow: 1px 1px 2px rgba(237, 54, 84, 0.5); }
 
 
 
@@ -354,7 +398,6 @@ section.footer{
         font-size: 40px;
     }
     .myself{
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -363,13 +406,89 @@ section.footer{
         width: 80%;
         margin: 5vh 0;
     }
-    .input{
-        padding: 10px 15px;
-        width: 70%;
-        height: calc(25vh * 2);
-    }
     .box-skills{
         width: 80%;
         height: 100px;
     }
+    .studies{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .courses{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .courses div{
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 730px){
+    .title h1{ font-size: 45px; }
+
+    .box-skills{
+        width: 85%;
+        height: 135px;
+    }
+}
+
+@media screen and (max-width: 540px){
+
+    .container{ margin-top: 240px; }
+
+    .title h1{ font-size: 35px; }
+
+    .center h1 { font-size: 35px; }
+
+    .title p{ font-size: 14px; }
+
+    .links button{
+        padding: 5px 15px;
+        margin-right: 5px;
+    }
+    
+    .links a img{ 
+        width: 26px; 
+        margin: 0 5px 0 5px;
+    }
+
+    .scroll { margin: 18vh auto 10vh; }
+
+    .myself{ padding: 0 2%; }
+
+    .myself p{ font-size: 16px; }
+
+    .photo{
+        width: 180px;
+        height: 180px;
+    }
+    
+    .courses{
+        width: 95%;
+        padding: 0 10%;
+    }
+    .courses div{ flex-direction: column; }
+
+    .courses div h4{
+        margin-top: 6px;
+        font-size: 14px;
+    }
+    
+    .courses div p{ font-size: 14px; margin-top: -5px; }
+    
+    .certificados{ margin: 25px 0; opacity: 0.85; }
+
+    .box-skills{
+        margin: 0;
+        width: 0%;
+        height: 0%;
+    }
+    .skills .center>p{
+        margin: 0;
+        opacity: 0;
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6{ padding: 25px; }
 }
