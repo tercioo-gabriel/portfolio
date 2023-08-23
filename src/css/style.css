@@ -197,7 +197,7 @@ nav img:hover { opacity: 0.9; }
     content: '';
     position: absolute;
     inset: -50px 60px;
-    background: linear-gradient(315deg, #ed3654, #ae00ff);
+    background: linear-gradient(315deg, #ed3654, #f700ff);
     transition: 0.25s;
     animation: animar 6s linear infinite;
 }
