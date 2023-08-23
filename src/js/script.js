@@ -65,49 +65,19 @@ const pTs = document.querySelector('.p4');
 const pPs = document.querySelector('.p5');
 const pGit = document.querySelector('.p6');
 
+function mouserOverText (tec, p) {
+  tec.addEventListener('mouseover', ()=>{
+    p.style.opacity = 1;
+  });
+  tec.addEventListener('mouseout', ()=>{
+    p.style.opacity = 0;
+  })
+};
 
-function mouseOverText() {
-  html.addEventListener('mouseover', () =>{
-    pHtml.style.opacity = 1;
-  });
-  html.addEventListener('mouseout', () =>{
-    pHtml.style.opacity = 0;
-  });
+mouserOverText(html, pHtml);
+mouserOverText(css, pCss);
+mouserOverText(js, pJs);
+mouserOverText(ts, pTs);
+mouserOverText(ps, pPs);
+mouserOverText(git, pGit);
 
-  css.addEventListener('mouseover', () =>{
-    pCss.style.opacity = 1;
-  });
-  css.addEventListener('mouseout', () =>{
-    pCss.style.opacity = 0;
-  });
-  
-  js.addEventListener('mouseover', () =>{
-    pJs.style.opacity = 1;
-  });
-  js.addEventListener('mouseout', () =>{
-    pJs.style.opacity = 0;
-  });
-
-  ts.addEventListener('mouseover', () =>{
-    pTs.style.opacity = 1;
-  });
-  ts.addEventListener('mouseout', () =>{
-    pTs.style.opacity = 0;
-  });
-
-  ps.addEventListener('mouseover', () =>{
-    pPs.style.opacity = 1;
-  });
-  ps.addEventListener('mouseout', () =>{
-    pPs.style.opacity = 0;
-  });
-
-  git.addEventListener('mouseover', () =>{
-    pGit.style.opacity = 1;
-  });
-  git.addEventListener('mouseout', () =>{
-    pGit.style.opacity = 0;
-  });
-}
-
-mouseOverText();
