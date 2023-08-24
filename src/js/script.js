@@ -47,7 +47,8 @@ function desmarcarCheckboxes() {
   });
 }
 
-window.onload = desmarcarCheckboxes;
+window.onload = desmarcarCheckboxes();
+
 
 //Função de clique para exibir habilidades
 

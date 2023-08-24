@@ -348,9 +348,49 @@ strong{  color: #ed3654; text-shadow: 1px 1px 2px rgba(237, 54, 84, 0.5); }
     background-color: var(--background2);
     padding: 10vh 0;
 }
+
+.projects .center{ flex-direction: column; align-items: center; }
+
 .projects .center h1{ font-size: 40px; }
 
+.portfolio{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
 
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f700ff;
+    border: 5px solid blue;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 350px;
+    width: 280px;
+    position: relative;
+    /* gap: 30px; */
+}
+.projetos img{ width: 100%; }
+
+.projetos p{
+
+}
+.tecs{
+    margin-top: 127px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 26px;
+    opacity: 0;
+}
+.tecs:hover{
+    background-color: 100%;
+    opacity: 1;
+}
 
 
 
