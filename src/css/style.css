@@ -353,45 +353,50 @@ strong{  color: #ed3654; text-shadow: 1px 1px 2px rgba(237, 54, 84, 0.5); }
 
 .projects .center h1{ font-size: 40px; }
 
-.portfolio{
+.projetos{
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.projetos{
+.card-pj{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 350px;
+    width: 280px;
+    overflow: hidden;
     background-color: #f700ff;
     border: 5px solid blue;
     border-radius: 20px;
-    overflow: hidden;
-    height: 350px;
-    width: 280px;
     position: relative;
-    /* gap: 30px; */
 }
-.projetos img{ width: 100%; }
+.card-pj img{ width: 100%; }
 
-.projetos p{
-
+.card-pj p{
+  margin: auto 0;
 }
 .tecs{
-    margin-top: 127px;
+    margin-top: 125px;
     position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    width: 26px;
+    width: 30px;
     opacity: 0;
-}
-.tecs:hover{
-    background-color: 100%;
-    opacity: 1;
+    transition: opacity 0.35s ease, visibility 0.35s ease-in;
 }
 
+.card-pj img:hover{ filter: grayscale(100%) blur(1px); }
+
+.card-pj:hover .tecs{
+  display: flex;
+  pointer-events: none;
+  filter: grayscale(0%);
+  opacity: 1;
+  transition: opacity 0.35s ease, visibility 0.35s ease-in;
+}
 
 
 
