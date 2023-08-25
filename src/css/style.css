@@ -55,10 +55,10 @@ nav{
     -webkit-backdrop-filter: blur(6px) saturate(110%);
     background-color: rgba(17, 25, 40, 0);
     height: 80px;
-    box-shadow: 0px 8px 6px -2px rgba(0,0,0,0.15); 
+    /* box-shadow: 0px 8px 6px -2px rgba(0,0,0,0.15);  */
 }
 
-nav img{ width: 140px; transition: 0.25s; cursor: pointer;}
+nav img{ width: 130px; transition: 0.25s;}
 
 nav img:hover { opacity: 0.9; }
 
@@ -81,7 +81,7 @@ nav img:hover { opacity: 0.9; }
     position: absolute;
     bottom: -10px;
     left: 0;
-    transition: 0.25s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .items-nav a:hover{ color: #ed3654; }
@@ -339,45 +339,62 @@ nav img:hover { opacity: 0.9; }
 
 strong{  color: #ed3654; text-shadow: 1px 1px 2px rgba(237, 54, 84, 0.5); }
 
-
-
-
-
 .projects{
     margin: 0 auto;
     background-color: var(--background2);
-    padding: 10vh 0;
+    padding: 10vh 1% 3vh;
 }
 
-.projects .center{ flex-direction: column; align-items: center; }
-
-.projects .center h1{ font-size: 40px; }
+.projects .center h1{ font-size: 40px; margin-bottom: 10vh; }
 
 .projetos{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 8vh;
 }
 
 .card-pj{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 350px;
+    margin-bottom: 100px;
+    height: 370px;
     width: 280px;
     overflow: hidden;
-    background-color: #f700ff;
-    border: 5px solid blue;
-    border-radius: 20px;
     position: relative;
 }
 .card-pj img{ width: 100%; }
 
-.card-pj p{
-  margin: auto 0;
+.img-card{ border-radius: 8px 8px 8px 8px; }
+
+.card-pj span{
+  margin-top: 335px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
 }
+
+.card-pj p{
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: 'Roboto Mono';
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.card-pj a{
+  padding: 3px 30px;
+  margin: 0 25px;
+  border-radius: 15px;
+  background-color: #ed3654;
+}
+
 .tecs{
-    margin-top: 125px;
+    margin-top: 55%;
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -385,46 +402,78 @@ strong{  color: #ed3654; text-shadow: 1px 1px 2px rgba(237, 54, 84, 0.5); }
     gap: 10px;
     width: 30px;
     opacity: 0;
-    transition: opacity 0.35s ease, visibility 0.35s ease-in;
+    transition: opacity 0.25s ease-in;
 }
 
-.card-pj img:hover{ filter: grayscale(100%) blur(1px); }
+.card-pj:hover .img-card{ filter: grayscale(100%); }
 
-.card-pj:hover .tecs{
+.card-pj:hover .tecs{ pointer-events: none; opacity: 1; }
+
+.contact .center{
+  align-items: center;
+  flex-direction: column;
+  padding: 12vh 1% 20vh;
+}
+
+.contact h1{
+  font-size: 40px;
+  margin-bottom: 10vh;
+}
+
+.contatos {
+  display: flex; 
+  flex-direction: row;
+  gap: 8vh;
+}
+
+.contatos a img{
+  width: 50px;
+  margin: 0 15px;
+  border-radius: 50%;
+  transition: 0.3s all ease-in-out;
+}
+
+.contatos a img:hover{
+  transform: perspective(800px) rotateX(10deg) rotateY(25deg);
+  filter: brightness(1.2) saturate(120%);
+  
+}
+
+.links-contatos{ text-align: center; }
+
+.links-contatos a{ text-decoration: none; }
+
+.links-contatos p{
+  color: var(--text2);
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+footer{
+  padding: 35px 0;
+  background-color: var(--background2);
   display: flex;
-  pointer-events: none;
-  filter: grayscale(0%);
-  opacity: 1;
-  transition: opacity 0.35s ease, visibility 0.35s ease-in;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-section.footer{
-    margin: 1000px 0;
+footer a{
+  background-color: var(--text);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: var(--background);
+  cursor: pointer;
+  transition: 0.15s;
 }
+
+footer p{ margin-top: 20px; }
+
+footer a:hover{ color: #ed3654; transform: scale(0.95); }
+
+
+
+/* Medias Queries */
 
 @media screen and (max-width: 1240px){
     .center{
@@ -538,4 +587,6 @@ section.footer{
     }
 
     .card1, .card2, .card3, .card4, .card5, .card6{ padding: 25px; }
+
+    .card-pj{ margin-bottom: 50px; }
 }
