@@ -452,7 +452,7 @@ background-color: #ed3654;
   transition: opacity 0.25s ease-in;
 }
 
-.card-pj:hover .img-card{ filter: grayscale(100%); }
+.card-pj:hover .img-card{ filter: grayscale(100%) blur(1px); }
 
 .card-pj:hover .tecs{ pointer-events: none; opacity: 1; }
 
