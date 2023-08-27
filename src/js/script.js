@@ -1,4 +1,4 @@
-//Função troca de tema e logo
+//Função troca de tema e logo //
 
 const darkTheme = ()=>{
   document.documentElement.setAttribute('data-theme', 'light');
@@ -37,7 +37,21 @@ checkboxTheme.addEventListener('change', () =>{
   }
 });
 
-//Desmarcar CheckBox (tema) no refresh da página
+// Função digitando do Título //
+
+function digitarTitulo(elemento){
+  const arrTexto = elemento.innerHTML.split('');
+
+  elemento.innerHTML = '';
+  arrTexto.forEach((letra, i)=>{
+    setTimeout(()=> elemento.innerHTML += letra, 135 * i);
+  });
+}
+
+const h1Titulo = document.querySelector('.digitando');
+digitarTitulo(h1Titulo);
+
+//Função desmarcar CheckBox (tema) no refresh da página //
 
 function desmarcarCheckboxes() {
   var checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -49,8 +63,61 @@ function desmarcarCheckboxes() {
 
 window.onload = desmarcarCheckboxes();
 
+//Função Navbar Mobile/Responsiva //
 
-//Função de clique para exibir habilidades
+function navbarResponsive(){
+  const hamburguer = document.querySelector('.hamburguer');
+  const nav = document.querySelector('.items-nav');
+
+  hamburguer.addEventListener('click', () => {
+    if (nav.style.opacity === '0') {
+      nav.style.opacity = 1;
+      nav.style.pointerEvents = 'all';
+    } else {
+      nav.style.opacity = 0;
+      nav.style.pointerEvents = 'none';
+    }
+  });
+  
+}
+
+navbarResponsive();
+
+//Função do Media Querie Navbar //
+
+function mudancaNaMedia() {
+
+  const mediaQuery = window.matchMedia("(min-width: 741px)");
+  const nav = document.querySelector('.items-nav');
+
+  if (mediaQuery.matches) {
+    nav.style.opacity = 1;
+    nav.pointerEvents = 'all';
+  } else {
+    nav.style.opacity = 0;
+  }
+}
+
+mudancaNaMedia();
+
+window.addEventListener('resize', mudancaNaMedia);
+
+// Função de Animation hamburguerNav //
+
+const hamburguer = document.querySelector('.hamburguer');
+
+function toggleHamburguer() {
+  hamburguer.classList.toggle('active');
+}
+
+toggleHamburguer();
+window.onload = toggleHamburguer(false);
+
+window.addEventListener('resize', () => {
+  hamburguer.classList.remove('active');
+});
+
+//Função de clique para exibir habilidades //
 
 const html = document.querySelector('.card1');
 const css = document.querySelector('.card2');

@@ -17,13 +17,15 @@
 <body>
     <nav id="nav">
         <img src="./src/images/tercio_black.png" alt="" id="logo">
+        <button class="hamburguer" onclick="toggleHamburguer()"></button>
         <div class="items-nav">
-                <a href=".">Início</a>
-                <a href=".">Sobre Mim</a>
-                <a href=".">Habilidades</a>
-                <a href=".">Projetos</a>
-                <a href=".">Contato</a>
-                <div class="button-theme">
+                <a href="#main" id="i">Início</a>
+                <a href="#about-me">Sobre Mim</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#projects">Projetos</a>
+                <a href="#contact" id="c">Contato</a>
+        </div>
+        <div class="button-theme">
                     <input type="checkbox" class="checkbox" id="checkbox">
                     <label for="checkbox" class="label">
                       <i class="fas fa-moon"></i>
@@ -31,14 +33,13 @@
                       <div class="ball"></div>
                     </label>
                 </div>
-        </div>
     </nav>
-    <section class="main">
+    <section class="main" id="main">
         <div class="center">
             <div class="container">
                 <div class="title">
-                    <h1>Olá, eu sou <a href=".">Tércio Gabriel</a> <br>
-                        Desenvolvedor Front-End JavaScript</h1>
+                    <h1>Olá, eu sou <a href=".">Tércio Gabriel</a></h1><br>
+                        <h1 class="digitando">Desenvolvedor Front-End JavaScript</h1>
                     <p>Bem-vindo(a) ao meu site
                         <i class="fa-solid fa-face-grin-wide" style="color: #ed3654;"></i>
                     </p>
@@ -51,7 +52,7 @@
                 <div class="scroll">
                     <div class="chevron"></div>
                     <div class="chevron"></div>
-                    <div class="chevron"></div>
+                    <div class="chevron" id="about-me"></div>
                 </div>
             </div>
         </div>
@@ -88,7 +89,7 @@
                         <h4>Danki Code</h4>
                         <p>(2023 - atualmente)</p>
                     </div>
-                    <div>
+                    <div id="skills">
                         <h4>Dev Samurai</h4>
                         <p>(2023- atualmente)</p>
                     </div>
@@ -99,6 +100,7 @@
             </div>
         </div>
     </section>
+
     <section class="skills">
         <div class="center">
             <h1>Habilidades</h1>
@@ -144,7 +146,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="center">
             <h1>Projetos</h1>
             <div class="projetos">
@@ -225,7 +227,8 @@
               </div>
         </div>
     </section>
-    <section class="contact">
+
+    <section class="contact" id="contact">
       <div class="center">
         <h1>Entre em Contato</h1>
         <div class="contatos">
@@ -268,7 +271,7 @@
     </section>
 
     <footer>
-      <a>Voltar ao Início</a>
+      <a href="#main">Voltar ao Início</a>
       <p>Todos direitos reservados a @Tércio Gabriel - 2023</p>
     </footer>
   
