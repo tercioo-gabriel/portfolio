@@ -30,9 +30,9 @@ checkboxTheme.addEventListener('change', () =>{
   }
   
   if (checkboxTheme.checked) {
-    logo.setAttribute("src", "./src/images/tercio_white.png");
+    logo.setAttribute('src', "./assets/images/tercio_white.png");
   } else {
-    logo.setAttribute("src", "./src/images/tercio_black.png");
+    logo.setAttribute('src', "./assets/images/tercio_black.png");
 
   }
 });

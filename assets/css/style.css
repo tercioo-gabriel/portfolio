@@ -56,7 +56,6 @@ nav{
   -webkit-backdrop-filter: blur(6px) saturate(110%);
   background-color: rgba(17, 25, 40, 0);
   height: 80px;
-  /* box-shadow: 0px 8px 6px -2px rgba(0,0,0,0.15);  */
 }
 
 nav img{ width: 130px; transition: 0.25s;}
@@ -690,10 +689,10 @@ footer a:hover{ color: #ed3654; transform: scale(0.95); }
   .certificados{ margin: 25px 0; opacity: 0.85; }
 
   .box-skills{
-    margin: 0;
-    width: 0%;
-    height: 0%;
+    width: 95%;
+    height: 150px;
   }
+
   .skills .center>p{
     margin: 0;
     opacity: 0;
@@ -708,8 +707,10 @@ footer a:hover{ color: #ed3654; transform: scale(0.95); }
   footer p{ text-align: center; }
 }
 
+@media screen and (max-width: 430px) { .box-skills { height: 190px; } }
+
 @media screen and (max-width: 300px) {
-  
   .projects .center h1{ margin-bottom: 0; }
   .projetos{ transform: scale(0.80); }
+  .box-skills { height: 245px; }
 }

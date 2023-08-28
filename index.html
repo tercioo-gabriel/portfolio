@@ -1,281 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tércio Gabriel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tércio Gabriel</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&family=Roboto+Mono:wght@200;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&family=Roboto+Mono:wght@200;400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/toggle-theme.css">
-    <link rel="stylesheet" href="./src/css/scroll.css">
-    <link rel="stylesheet" href="./src/css/star-parallax-bg.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/toggle-theme.css">
+  <link rel="stylesheet" href="./assets/css/scroll.css">
+  <link rel="stylesheet" href="./assets/css/star-parallax-bg.css">
+  <script src="https://kit.fontawesome.com/1c652158bf.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <nav id="nav">
-        <img src="./src/images/tercio_black.png" alt="" id="logo">
-        <button class="hamburguer" onclick="toggleHamburguer()"></button>
-        <div class="items-nav">
-                <a href="#main" id="i">Início</a>
-                <a href="#about-me">Sobre Mim</a>
-                <a href="#skills">Habilidades</a>
-                <a href="#projects">Projetos</a>
-                <a href="#contact" id="c">Contato</a>
+  <nav id="nav">
+    <img src="./assets/images/tercio_black.png" alt="" id="logo">
+    <button class="hamburguer" onclick="toggleHamburguer()"></button>
+    <div class="items-nav">
+      <a href="#main" id="i">Início</a>
+      <a href="#about-me">Sobre Mim</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact" id="c">Contato</a>
+    </div>
+
+    <div class="button-theme">
+      <input type="checkbox" class="checkbox" id="checkbox">
+      <label for="checkbox" class="label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+        </label>
+    </div>
+  </nav>
+
+  <section class="main" id="main">
+    <div class="center">
+      <div class="container">
+        <div class="title">
+          <h1>Olá, eu sou <a href=".">Tércio Gabriel</a></h1><br>
+            <h1 class="digitando">Desenvolvedor Front-End JavaScript</h1>
+          <p>Bem-vindo(a) ao meu site
+            <i class="fa-solid fa-face-grin-wide" style="color: #ed3654;"></i>
+          </p>
         </div>
-        <div class="button-theme">
-                    <input type="checkbox" class="checkbox" id="checkbox">
-                    <label for="checkbox" class="label">
-                      <i class="fas fa-moon"></i>
-                      <i class="fas fa-sun"></i>
-                      <div class="ball"></div>
-                    </label>
-                </div>
-    </nav>
-    <section class="main" id="main">
-        <div class="center">
-            <div class="container">
-                <div class="title">
-                    <h1>Olá, eu sou <a href=".">Tércio Gabriel</a></h1><br>
-                        <h1 class="digitando">Desenvolvedor Front-End JavaScript</h1>
-                    <p>Bem-vindo(a) ao meu site
-                        <i class="fa-solid fa-face-grin-wide" style="color: #ed3654;"></i>
-                    </p>
-                </div>
-                <div class="links">
-                    <a href="#"> <button>Currículo</button> </a>
-                    <a href="https://github.com/tercioo-gabriel" target="_blank"> <img src="./src/images/github.png" alt="github"> </a>
-                    <a href="https://www.linkedin.com/in/terciogabrieldejesus/" target="_blank"> <img src="./src/images/linkedin.png" alt="linkedin"> </a>
-                </div>
-                <div class="scroll">
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
-                    <div class="chevron" id="about-me"></div>
-                </div>
-            </div>
+
+        <div class="links">
+          <a href="#"> <button>Currículo</button> </a>
+          <a href="https://github.com/tercioo-gabriel" target="_blank"> <img src="./assets/images/github.png" alt="github"> </a>
+          <a href="https://www.linkedin.com/in/terciogabrieldejesus/" target="_blank"> <img src="./assets/images/linkedin.png" alt="linkedin"> </a>
         </div>
-    </section>
 
-    <section class="about-me">
-        <div class="center">
-            <h1>Sobre Mim</h1>
-            <div class="myself">
-                <div class="photo">
-                    <div>
-                        <img src="./src/images/foto2.png" alt="eu">
-                    </div>
-                </div>
-                <p>Desde sempre fui apaixonado por tecnologia e com um sonho de trabalhar em alguma área dela, hoje no desenvolvimento web posso tornar meu sonho em realidade. Já tive experiências no passado como Designer Gráfico no Photoshop e Illustrator, mas atualmente venho me especializando em programação, especificamente, utilizando a linguagem JavaScript. Sou extremamente motivado e sempre estou em constante desenvolvimento de minhas habilidades.</p>
-            </div>
-            <div class="studies">
-                <div class="empty"></div>
-                <div class="courses">
-                    <!-- <h2>Cursos e Certificados</h2> -->
-
-                    <h3>Bacharelado em Engenharia da Computação</h3>
-                    <div>
-                        <h4>Faculdade Descomplica</h4>
-                        <p>(2022-2027)</p>
-                    </div>
-
-                    <h3 class="fs">Cursos FullStack</h3>
-                    <div>
-                        <h4>B7Web</h4>
-                        <p>(2022 - atualmente)</p>
-                    </div>
-                    <div>
-                        <h4>Danki Code</h4>
-                        <p>(2023 - atualmente)</p>
-                    </div>
-                    <div id="skills">
-                        <h4>Dev Samurai</h4>
-                        <p>(2023- atualmente)</p>
-                    </div>
-
-                    <p class="certificados">Certificados no <a href="https://www.linkedin.com/in/terciogabrieldejesus/" target="_blank">LinkedIn</a></p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="skills">
-        <div class="center">
-            <h1>Habilidades</h1>
-            <p>Passe o cursor do mouse por cima das habilidades</p>
-            <div class="box-skills">
-                <p class="p1"><strong>HTML</strong> (HyperText Markup Language) é a linguagem de marcação padrão usada para criar os elementos da página (textos, links, imagens...). É a base das páginas web.</p>
-
-                <p class="p2"><strong>CSS</strong> (Cascading Style Sheets) é uma linguagem que controla a aparência visual de páginas da web. Permite definir cores, fontes, layout e mais. Essas regras são aplicadas a elementos HTML usando seletores e declarações.</p>
-
-                <p class="p3"><strong>JavaScript</strong> é a principal linguagem de programação usada para desenvolvimento web. Ela é muito utilizada para manipulação de elementos HTML e CSS (DOM), requisições assíncronas (AJAX) e responder a eventos.</p>
-
-                <p class="p4"><strong>TypeScript</strong> é um "superset" da linguagem JavaScript, adiciona um sistema de tipagem estática e recursos avançados de linguagem, tornando o desenvolvimento mais robusto, eficiente e seguro.</p>
-
-                <p class="p5"><strong>React</strong> é uma poderosa biblioteca JavaScript usada para construir interfaces de usuário interativas, eficientes e reutilizáveis em aplicações web modernas.</p>
-
-                <p class="p6"><strong>NextJs</strong> é um framework de desenvolvimento para React que se concentra em facilitar a criação de aplicativos web modernos e otimizados. Oferece funcionalidades avançadas para renderização eficiente e roteamento.</p>
-
-                <p class="p7"><strong>Git</strong> é um sistema de controle de versão distribuído, projetado para acompanhar mudanças em arquivos ao longo do tempo e facilitar a colaboração entre as pessoas em um ambiente de desenvolvimento de software.</p>
-            </div>
-            <div class="hard-skills">
-                <div class="card1">
-                    <img src="./src/images/HTML.png" alt="html">
-                </div>
-                <div class="card2">
-                    <img src="./src/images/CSS.png" alt="css">
-                </div>
-                <div class="card3">
-                    <img src="./src/images/JAVASCRIPT.png" alt="">
-                </div>
-                <div class="card4">
-                    <img src="./src/images/TYPESCRIPT.png" alt="">
-                </div>
-                <div class="card5">
-                    <img src="./src/images/REACT.png" alt="">
-                </div>
-                <div class="card6">
-                    <img src="./src/images/NEXT.png" alt="">
-                </div>
-                <div class="card7">
-                    <img src="./src/images/GIT.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <div class="center">
-            <h1>Projetos</h1>
-            <div class="projetos">
-                <div class="card-pj">
-                  <p>GitHub Profile Finder</p>
-                    <img class="img-card" src="./src/images/projects/profile-finder.png" alt="GitHub Profile Finder">
-                    <span>
-                      <a href="." target="_blank"><i class="fa-solid fa-eye"  style="color: var(--background);"></i></a>
-                      <a href="." target="_blank"><i class="fa-solid fa-link" style="color: var(--background);"></i></a>
-                    </span>
-                    <div class="tecs">
-                        <img src="./src/images/tec_projects/HTML.png" />
-                        <img src="./src/images/tec_projects/CSS.png" />
-                        <img src="./src/images/tec_projects/TYPESCRIPT.png" />
-                        <img src="./src/images/tec_projects/REACT.png" />
-                        <img src="./src/images/tec_projects/VITE.png" />
-                    </div> 
-                </div>
-
-                <div class="card-pj">
-                  <p>Gerador de Senhas</p>
-                  <img class="img-card" src="./src/images/projects/gerador-de-senhas.png" alt="Gerador de Senhas">
-                  <span>
-                    <a href="." target="_blank"><i class="fa-solid fa-eye"  style="color: var(--background);"></i></a>
-                    <a href="." target="_blank"><i class="fa-solid fa-link" style="color: var(--background);"></i></a>
-                  </span>
-                  <div class="tecs">
-                      <img src="./src/images/tec_projects/HTML.png" />
-                      <img src="./src/images/tec_projects/CSS.png" />
-                      <img src="./src/images/tec_projects/JAVASCRIPT.png" />
-                  </div> 
-                </div>
-
-              <div class="card-pj">
-                <p>Gerador de Senhas</p>
-                <img class="img-card" src="./src/images/projects/gerador-de-senhas.png" alt="Gerador de Senhas">
-                <span>
-                  <a href="." target="_blank"><i class="fa-solid fa-eye"  style="color: var(--background);"></i></a>
-                  <a href="." target="_blank"><i class="fa-solid fa-link" style="color: var(--background);"></i></a>
-                </span>
-                <div class="tecs">
-                    <img src="./src/images/tec_projects/HTML.png" />
-                    <img src="./src/images/tec_projects/CSS.png" />
-                    <img src="./src/images/tec_projects/JAVASCRIPT.png" />
-                </div> 
-              </div>
-
-              <div class="card-pj">
-                <p>GitHub Profile Finder</p>
-                <img class="img-card" src="./src/images/projects/profile-finder.png" alt="GitHub Profile Finder">
-                <span>                  
-                  <a href="." target="_blank"><i class="fa-solid fa-eye"  style="color: var(--background);"></i></a>
-                  <a href="." target="_blank"><i class="fa-solid fa-link" style="color: var(--background);"></i></a>
-                </span>
-                <div class="tecs">
-                    <img src="./src/images/tec_projects/HTML.png" />
-                    <img src="./src/images/tec_projects/CSS.png" />
-                    <img src="./src/images/tec_projects/TYPESCRIPT.png" />
-                    <img src="./src/images/tec_projects/REACT.png" />
-                    <img src="./src/images/tec_projects/VITE.png" />
-                </div> 
-              </div>
-              
-              <div class="card-pj">
-                <p>GitHub Profile Finder</p>
-                <img class="img-card" src="./src/images/projects/profile-finder.png" alt="GitHub Profile Finder">
-                <span>
-                  <a href="." target="_blank"><i class="fa-solid fa-eye"  style="color: var(--background);"></i></a>
-                  <a href="." target="_blank"><i class="fa-solid fa-link" style="color: var(--background);"></i></a>
-                </span>
-                <div class="tecs">
-                    <img src="./src/images/tec_projects/HTML.png" />
-                    <img src="./src/images/tec_projects/CSS.png" />
-                    <img src="./src/images/tec_projects/TYPESCRIPT.png" />
-                    <img src="./src/images/tec_projects/REACT.png" />
-                    <img src="./src/images/tec_projects/VITE.png" />
-                </div> 
-              </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="center">
-        <h1>Entre em Contato</h1>
-        <div class="contatos">
-          <div class="links-contatos">
-            <a href="https://contate.me/tercioo-gabriel" target="_blank"><img src="./src/images/tec_projects/whats.png" alt="whats-app">
-              <p>Whatsapp</p>
-              <p>(74) 988531721</p>
-            </a>
-          </div>
-
-          <div class="links-contatos">
-            <a href="https://www.instagram.com/tercio.gabriel/" target="_blank"><img src="./src/images/tec_projects/insta.png" alt="instagram">
-              <p>Instagram</p>
-              <p>@tercio.gabriel</p>
-            </a>
-          </div>
-
-          <div class="links-contatos">
-            <a href="mailto:terciogabrieldejesus@gmail.com" target="_blank"><img src="./src/images/tec_projects/gmail.png" alt="gmail">
-              <p>Gmail</p>
-              <p>terciogabrielde<br />jesus@gmail.com</p>
-            </a>
-          </div>
-
-          <div class="links-contatos">
-            <a href="https://www.linkedin.com/in/terciogabrieldejesus/" target="_blank"><img src="./src/images/tec_projects/linkedin.png" alt="linkedin">
-              <p>LinkedIn</p>
-              <p>Tércio Gabriel<br />de Jesus</p>
-            </a>
-          </div>
-
-          <div class="links-contatos">
-            <a href="https://github.com/tercioo-gabriel" target="_blank"><img src="./src/images/tec_projects/git-hub.png" alt="git-hub">
-              <p>GitHub</p>
-              <p>tercioo-gabriel</p>
-            </a>
-          </div>
+        <div class="scroll">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron" id="about-me"></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <a href="#main">Voltar ao Início</a>
-      <p>Todos direitos reservados a @Tércio Gabriel - 2023</p>
-    </footer>
-  
-    <script src="./src/js/script.js"></script>
-    <script src="https://kit.fontawesome.com/1c652158bf.js" crossorigin="anonymous"></script>
+  <section class="about-me">
+    <div class="center">
+      <h1>Sobre Mim</h1>
+      <div class="myself">
+        <div class="photo">
+          <div>
+            <img src="./assets/images/foto2.png" alt="eu">
+          </div>
+        </div>
+        <p>Desde sempre fui apaixonado por tecnologia e com um sonho de trabalhar em alguma área dela, hoje no desenvolvimento web posso tornar meu sonho em realidade. Já tive experiências no passado como Designer Gráfico no Photoshop e Illustrator, mas atualmente venho me especializando em programação, especificamente, utilizando a linguagem JavaScript. Sou extremamente motivado e sempre estou em constante desenvolvimento de minhas habilidades.</p>
+      </div>
+
+      <div class="studies">
+        <div class="empty"></div>
+        <div class="courses">
+            <!-- <h2>Cursos e Certificados</h2> -->
+
+          <h3>Bacharelado em Engenharia da Computação</h3>
+          <div>
+            <h4>Faculdade Descomplica</h4>
+            <p>(2022-2027)</p>
+          </div>
+
+          <h3 class="fs">Cursos FullStack</h3>
+          <div>
+            <h4>B7Web</h4>
+            <p>(2022 - atualmente)</p>
+          </div>
+
+          <div>
+            <h4>Danki Code</h4>
+            <p>(2023 - atualmente)</p>
+          </div>
+
+          <div id="skills">
+            <h4>Dev Samurai</h4>
+            <p>(2023- atualmente)</p>
+          </div>
+
+          <p class="certificados">Certificados no <a href="https://www.linkedin.com/in/terciogabrieldejesus/" target="_blank">LinkedIn</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="center">
+      <h1>Habilidades</h1>
+      <p>Passe o cursor do mouse ou clique por cima das habilidades</p>
+      <div class="box-skills">
+        <p class="p1"><strong>HTML</strong> (HyperText Markup Language) é a linguagem de marcação padrão usada para criar os elementos da página (textos, links, imagens...). É a base das páginas web.</p>
+
+        <p class="p2"><strong>CSS</strong> (Cascading Style Sheets) é uma linguagem que controla a aparência visual de páginas da web. Permite definir cores, fontes, layout e mais. Essas regras são aplicadas a elementos HTML usando seletores e declarações.</p>
+
+        <p class="p3"><strong>JavaScript</strong> é a principal linguagem de programação usada para desenvolvimento web. Ela é muito utilizada para manipulação de elementos HTML e CSS (DOM), requisições assíncronas (AJAX) e responder a eventos.</p>
+
+        <p class="p4"><strong>TypeScript</strong> é um "superset" da linguagem JavaScript, adiciona um sistema de tipagem estática e recursos avançados de linguagem, tornando o desenvolvimento mais robusto, eficiente e seguro.</p>
+
+        <p class="p5"><strong>React</strong> é uma poderosa biblioteca JavaScript usada para construir interfaces de usuário interativas, eficientes e reutilizáveis em aplicações web modernas.</p>
+
+        <p class="p6"><strong>NextJs</strong> é um framework de desenvolvimento para React que se concentra em facilitar a criação de aplicativos web modernos e otimizados. Oferece funcionalidades avançadas para renderização eficiente e roteamento.</p>
+
+        <p class="p7"><strong>Git</strong> é um sistema de controle de versão distribuído, projetado para acompanhar mudanças em arquivos ao longo do tempo e facilitar a colaboração entre as pessoas em um ambiente de desenvolvimento de software.</p>
+      </div>
+
+      <div class="hard-skills">
+        <div class="card1">
+          <img src="./assets/images/HTML.png" alt="html">
+        </div>
+        <div class="card2">
+          <img src="./assets/images/CSS.png" alt="css">
+        </div>
+        <div class="card3">
+          <img src="./assets/images/JAVASCRIPT.png" alt="">
+        </div>
+        <div class="card4">
+          <img src="./assets/images/TYPESCRIPT.png" alt="">
+        </div>
+        <div class="card5">
+          <img src="./assets/images/REACT.png" alt="">
+        </div>
+        <div class="card6">
+          <img src="./assets/images/NEXT.png" alt="">
+        </div>
+        <div class="card7">
+          <img src="./assets/images/GIT.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="center">
+      <h1>Projetos</h1>
+      <div class="projetos">
+        <div class="card-pj">
+          <p>GitHub Profile Finder</p>
+          <img class="img-card" src="./assets/images/projects/profile-finder.png" alt="GitHub Profile Finder">
+          <span>
+            <a href="." target="_blank"><i class="fa-solid fa-eye"  style="color: var(--background);"></i></a>
+            <a href="." target="_blank"><i class="fa-solid fa-link" style="color: var(--background);"></i></a>
+          </span>
+          <div class="tecs">
+            <img src="./assets/images/tec_projects/HTML.png" />
+            <img src="./assets/images/tec_projects/CSS.png" />
+            <img src="./assets/images/tec_projects/TYPESCRIPT.png" />
+            <img src="./assets/images/tec_projects/REACT.png" />
+            <img src="./assets/images/tec_projects/VITE.png" />
+          </div> 
+        </div>
+
+        <div class="card-pj">
+          <p>Gerador de Senhas</p>
+          <img class="img-card" src="./assets/images/projects/gerador-de-senhas.png" alt="Gerador de Senhas">
+          <span>
+            <a href="." target="_blank"><i class="fa-solid fa-eye"  style="color: var(--background);"></i></a>
+            <a href="." target="_blank"><i class="fa-solid fa-link" style="color: var(--background);"></i></a>
+          </span>
+          <div class="tecs">
+            <img src="./assets/images/tec_projects/HTML.png" />
+            <img src="./assets/images/tec_projects/CSS.png" />
+            <img src="./assets/images/tec_projects/JAVASCRIPT.png" />
+          </div> 
+        </div>
+
+        <div class="card-pj">
+          <p>Gerador de Senhas</p>
+          <img class="img-card" src="./assets/images/projects/gerador-de-senhas.png" alt="Gerador de Senhas">
+          <span>
+            <a href="." target="_blank"><i class="fa-solid fa-eye"  style="color: var(--background);"></i></a>
+            <a href="." target="_blank"><i class="fa-solid fa-link" style="color: var(--background);"></i></a>
+          </span>
+          <div class="tecs">
+            <img src="./assets/images/tec_projects/HTML.png" />
+            <img src="./assets/images/tec_projects/CSS.png" />
+            <img src="./assets/images/tec_projects/JAVASCRIPT.png" />
+          </div> 
+        </div>
+
+        <div class="card-pj">
+          <p>GitHub Profile Finder</p>
+          <img class="img-card" src="./assets/images/projects/profile-finder.png" alt="GitHub Profile Finder">
+          <span>                  
+            <a href="." target="_blank"><i class="fa-solid fa-eye"  style="color: var(--background);"></i></a>
+            <a href="." target="_blank"><i class="fa-solid fa-link" style="color: var(--background);"></i></a>
+          </span>
+          <div class="tecs">
+            <img src="./assets/images/tec_projects/HTML.png" />
+            <img src="./assets/images/tec_projects/CSS.png" />
+            <img src="./assets/images/tec_projects/TYPESCRIPT.png" />
+            <img src="./assets/images/tec_projects/REACT.png" />
+            <img src="./assets/images/tec_projects/VITE.png" />
+          </div> 
+        </div>
+          
+        <div class="card-pj">
+          <p>GitHub Profile Finder</p>
+          <img class="img-card" src="./assets/images/projects/profile-finder.png" alt="GitHub Profile Finder">
+          <span>
+            <a href="." target="_blank"><i class="fa-solid fa-eye"  style="color: var(--background);"></i></a>
+            <a href="." target="_blank"><i class="fa-solid fa-link" style="color: var(--background);"></i></a>
+          </span>
+          <div class="tecs">
+            <img src="./assets/images/tec_projects/HTML.png" />
+            <img src="./assets/images/tec_projects/CSS.png" />
+            <img src="./assets/images/tec_projects/TYPESCRIPT.png" />
+            <img src="./assets/images/tec_projects/REACT.png" />
+            <img src="./assets/images/tec_projects/VITE.png" />
+          </div> 
+        </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="center">
+      <h1>Entre em Contato</h1>
+      <div class="contatos">
+        <div class="links-contatos">
+          <a href="https://contate.me/tercioo-gabriel" target="_blank"><img src="./assets/images/tec_projects/whats.png" alt="whats-app">
+            <p>Whatsapp</p>
+            <p>(74) 988531721</p>
+          </a>
+        </div>
+
+        <div class="links-contatos">
+          <a href="https://www.instagram.com/tercio.gabriel/" target="_blank"><img src="./assets/images/tec_projects/insta.png" alt="instagram">
+            <p>Instagram</p>
+            <p>@tercio.gabriel</p>
+          </a>
+        </div>
+
+        <div class="links-contatos">
+          <a href="mailto:terciogabrieldejesus@gmail.com" target="_blank"><img src="./assets/images/tec_projects/gmail.png" alt="gmail">
+            <p>Gmail</p>
+            <p>terciogabrielde<br />jesus@gmail.com</p>
+          </a>
+        </div>
+
+        <div class="links-contatos">
+          <a href="https://www.linkedin.com/in/terciogabrieldejesus/" target="_blank"><img src="./assets/images/tec_projects/linkedin.png" alt="linkedin">
+            <p>LinkedIn</p>
+            <p>Tércio Gabriel<br />de Jesus</p>
+          </a>
+        </div>
+
+        <div class="links-contatos">
+          <a href="https://github.com/tercioo-gabriel" target="_blank"><img src="./assets/images/tec_projects/git-hub.png" alt="git-hub">
+            <p>GitHub</p>
+            <p>tercioo-gabriel</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="#main">Voltar ao Início</a>
+    <p>Todos direitos reservados a @Tércio Gabriel - 2023</p>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
