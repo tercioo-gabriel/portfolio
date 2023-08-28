@@ -391,7 +391,12 @@ strong{  color: #ed3654; text-shadow: 1px 1px 2px rgba(237, 54, 84, 0.5); }
   padding: 10vh 1% 3vh;
 }
 
-.projects .center h1{ font-size: 40px; margin-bottom: 10vh; }
+.projects .center h1{
+  font-size: 40px;
+  margin-bottom: 10vh;
+  width: 100%;
+  text-align: center;
+}
 
 .projetos{
   display: flex;
@@ -481,7 +486,7 @@ transition: 0.3s all ease-in-out;
 
 .contatos a img:hover{
 transform: perspective(800px) rotateX(10deg) rotateY(25deg);
-filter: brightness(1.2) saturate(120%);
+filter: brightness(1.3) saturate(140%);
 }
 
 .links-contatos{ text-align: center; }
