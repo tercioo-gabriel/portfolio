@@ -84,7 +84,7 @@ nav img:hover { opacity: 0.9; }
 
 .hamburguer.active{ border-top-color: transparent; }
 .hamburguer.active::after{ transform: rotate(140deg); bottom: 5px; }
-.hamburguer.active::before { transform: rotate(-140deg); top: 2px }
+.hamburguer.active::before { transform: rotate(-140deg); top: 3px }
 
 .items-nav a{
   color: var(--text);
@@ -412,59 +412,49 @@ strong{  color: #ed3654; text-shadow: 1px 1px 2px rgba(237, 54, 84, 0.5); }
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
-  height: 370px;
-  width: 280px;
+  margin-bottom: 50px;
+  height: 300px;
+  width: 320px;
   overflow: hidden;
   position: relative;
 }
 .card-pj img{ width: 100%; }
 
-.img-card{ border-radius: 8px 8px 8px 8px; }
-
 .card-pj p{
 text-align: center;
-padding-bottom: 15px;
-font-family: 'Roboto Mono';
+padding-bottom: 5px;
 font-size: 18px;
 letter-spacing: -0.5px;
 font-weight: 700;
 color: var(--text);
 }
 
-.card-pj p:nth-child(3){
-  opacity: 0;
-  transition: 0.25s;
-  position: absolute;
-  margin: 195px 5px 0px 5px;
-  letter-spacing: -1.2px;
-  color: #ed3654;
-  text-shadow: 1px 1px 2px rgba(40, 40, 40, 0.3);
-}
-
-.card-pj span{
-  margin-top: 335px;
+.card-pj span:nth-child(3){
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 250px;
   width: 100%;
+  left: 15px;
   text-align: center;
   position: absolute;
 }
 
 .card-pj a{
-padding: 3px 50px;
-border-radius: 15px;
+padding: 10px 24px;
+border-radius: 50px;
+cursor: pointer;
 background-color: #ed3654;
 }
 
-.i{ padding: 0 18px; }
-
 .tecs{
-  margin-top: 55%;
+  margin-top: 35%;
   position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
-  width: 30px;
+  gap: 5px;
+  width: 25px;
   opacity: 0;
   transition: opacity 0.25s ease-in;
 }
@@ -536,201 +526,3 @@ transition: 0.15s;
 footer p{ margin-top: 20px; }
 
 footer a:hover{ color: #ed3654; transform: scale(0.95); }
-
-
-
-/* Medias Queries */
-
-@media screen and (max-width: 1240px){
-
-  .center{ padding: 0 2%; }
-
-  .items-nav a{
-    margin: 0 3x 0 3px;
-    font-size: 13px;
-  }
-
-  #logo{ width: 120px; }
-}
-
-@media screen and (max-width: 960px){
-
-  #logo{ width: 110px; }
-
-  .about-me h1{
-    margin-bottom: 60px;
-    font-size: 40px;
-  }
-
-  .myself{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .myself p{
-    text-align: center;
-    width: 80%;
-    margin: 5vh 0;
-  }
-
-  .box-skills{
-    width: 80%;
-    height: 100px;
-  }
-
-  .studies{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .courses{
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .courses div{ justify-content: center; }
-
-  .contatos{ gap: 5%; }
-}
-
-@media screen and (max-width: 740px){
-
-  #nav{
-    justify-content: space-between;
-    gap: 10px;
-    height: 60px;
-    display: flex;
-  }
-
-  #logo{ display: none; }
-
-  .hamburguer{
-      display: block;
-      margin-left: 20px;
-      z-index: 1;
-  }
-
-  .items-nav{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    top: 70px;
-    left: 10px;
-    text-align: center;
-    width: 320px;
-    overflow: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.15s;
-  }
-
-  .items-nav a:nth-child(1){ transition: 0.2s; }
-  .items-nav a:nth-child(2){ transition: 0.3s; }
-  .items-nav a:nth-child(3){ transition: 0.4s; }
-  .items-nav a:nth-child(4){ transition: 0.5s; }
-  .items-nav a:nth-child(5){ transition: 0.6s; }
-
-  .items-nav a{
-    padding: 30px 0;
-    font-size: 18px;
-    letter-spacing: 5px;
-    background: var(--text);
-    color: var(--background);
-  }
-  #i{ border-radius: 0 20px 0 0; }
-  #c{ border-radius: 0 0 20px 20px; }
-
-  .items-nav a:hover::after{ width: 0%; }
- 
-  .button-theme{ margin-right: 15px; }
-
-  .title h1{ font-size: 45px; }
-
-  .box-skills{
-    width: 85%;
-    height: 135px;
-  }
-
-  .contatos{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .links-contatos{ margin-top: 50px; }
-}
-
-@media screen and (max-width: 540px){
-
-  .items-nav{ width: 95vw; }
-
-  .container{ margin-top: 240px; }
-
-  .title h1{ font-size: 35px; }
-
-  .center h1 { font-size: 35px; }
-
-  .title p{ font-size: 14px; }
-
-  .links button{
-    padding: 5px 15px;
-    margin-right: 5px;
-  }
-  
-  .links a img{ 
-    width: 26px; 
-    margin: 0 5px 0 5px;
-  }
-
-  .scroll { margin: 13vh auto 10vh; }
-
-  .myself{ padding: 0 2%; }
-
-  .myself p{ font-size: 16px; }
-
-  .photo{
-      width: 180px;
-      height: 180px;
-  }
-  
-  .courses{
-    width: 95%;
-    padding: 0 10%;
-  }
-  .courses div{ flex-direction: column; }
-
-  .courses div h4{
-    margin-top: 6px;
-    font-size: 14px;
-  }
-  
-  .courses div p{ font-size: 14px; margin-top: -5px; }
-  
-  .certificados{ margin: 25px 0; opacity: 0.85; }
-
-  .box-skills{
-    width: 95%;
-    height: 150px;
-  }
-
-  .skills .center>p{
-    margin: 0;
-    opacity: 0;
-  }
-
-  .card1, .card2, .card3, .card4, .card5, .card6{ padding: 25px; }
-
-  .card-pj{ margin-bottom: 50px; }
-
-  .contact .center h1{ text-align: center; }
-
-  footer p{ text-align: center; }
-}
-
-@media screen and (max-width: 430px) { .box-skills { height: 190px; } }
-
-@media screen and (max-width: 300px) {
-  .projects .center h1{ margin-bottom: 0; }
-  .projetos{ transform: scale(0.80); }
-  .box-skills { height: 245px; }
-}
