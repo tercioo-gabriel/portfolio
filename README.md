@@ -5,8 +5,8 @@ Espero que goste 😁❤️
 
 ---------
 
-### Info
+### Informações
 
-Ícones do Fontawesome: 'https://fontawesome.com',
-Fonte do GoogleFonts: 'Montserrat [ 300, 500, 600, 700, 800 ]',
+Ícones do Fontawesome: 'https://fontawesome.com', <br/>
+Fonte do GoogleFonts: 'Montserrat [ 300, 500, 600, 700, 800 ]', <br/>
 Imagens de ícones: 'https://iconscout.com'
