@@ -50,7 +50,37 @@
 
   .courses div{ justify-content: center; }
 
-  .contatos{ gap: 5%; }
+  .projeto{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .projeto-description p{ transform: translateY(0px); }
+
+  .p-links a{ margin: 5px 10px 0 0; }
+  
+  .p-tecs{
+    position: absolute;
+    margin-left: -300px;
+    pointer-events: none;
+  }
+  
+  .p-tecs img{ 
+    margin-top: 70px;
+    width: 28px;
+    height: 28px;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .projeto:hover span.p-tecs > img{
+    z-index: 1; 
+    opacity: 1;
+    margin-top: 0;
+  }
+  
+  .contatos{ gap: 6%; }
 }
 
 @media screen and (max-width: 740px){
@@ -104,11 +134,32 @@
  
   .button-theme{ margin-right: 15px; }
 
+  .container{ margin-top: 26vh; }
+
   .title h1{ font-size: 45px; }
 
   .box-skills{
     width: 85%;
     height: 135px;
+  }
+
+  .projeto{
+    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .projeto-description p{ transform: translateY(0px); }
+
+  .projeto-footer{ margin-top: 20px; }
+  
+  .p-tecs{ display: none; }
+
+  .p-links a{
+    margin-left: 0;
+    gap: 0;
   }
 
   .contatos{
@@ -123,7 +174,7 @@
 
   .items-nav{ width: 95vw; }
 
-  .container{ margin-top: 240px; }
+  .container{ margin-top: 23vh; }
 
   .title h1{ font-size: 35px; }
 
@@ -179,27 +230,45 @@
 
   .card1, .card2, .card3, .card4, .card5, .card6{ padding: 25px; }
 
-  .card-pj{ margin-bottom: 50px; }
+  .projeto{
+    max-width: 80vh;
+  }
+
+  .p-links a{ margin: 3px 5px 0 0; }
 
   .contact .center h1{ text-align: center; }
 
   footer p{ text-align: center; }
 }
 
-@media screen and (max-width: 430px) { .box-skills { height: 190px; } }
+@media screen and (max-width: 430px) {
+
+  .container{ margin-top: 16vh; }
+
+  .scroll { margin: 12vh auto 5vh; }
+
+  .box-skills { height: 190px; }
+
+  .projeto{
+    width: 320px;
+  }
+
+  .projeto img{
+    height: 40vw;
+  }
+
+  .contact .center{
+    padding: 6vh 1% 10vh;
+    }
+    
+    .contact h1{
+    margin-bottom: 5vh;
+    }
+}
 
 @media screen and (max-width: 335px) {
-  .projects .center h1{ margin-bottom: 0; }
+  .projects .center h1{ margin-bottom: 20px; }
   .projetos{ transform: scale(0.90); }
-  .card-pj, .description{ width: 80%; }
   .box-skills { height: 245px; }
   
-  .card-pj span:nth-child(3){
-    gap: 4vw;
-    margin-top: 70vw;
-    width: 95%;
-    justify-content: center;
-  }
-  
-  .card-pj a{ padding: 8px 16px; }
 }

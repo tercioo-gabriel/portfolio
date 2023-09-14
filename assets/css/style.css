@@ -201,6 +201,8 @@ nav img:hover { opacity: 0.9; }
 
 .scroll { margin: 22vh auto 15vh; }
 
+/* SOBRE MIM E CURSOS */
+
 .about-me{
   background-color: var(--background2);
   margin-top: 3vh;
@@ -327,6 +329,8 @@ nav img:hover { opacity: 0.9; }
 }
 .certificados{ margin-top: 10px; opacity: 0.85; }
 
+/* HABILIDADES */
+
 .skills { margin: 10vh 0; }
 
 .skills .center{
@@ -387,83 +391,75 @@ nav img:hover { opacity: 0.9; }
 
 strong{  color: #ed3654; text-shadow: 1px 1px 2px rgba(237, 54, 84, 0.5); }
 
+/* PROJETOS */
+
 .projects{
-  margin: 0 auto;
   background-color: var(--background2);
   padding: 10vh 1% 3vh;
 }
 
 .projects .center h1{
   font-size: 40px;
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
   width: 100%;
   text-align: center;
 }
 
-.projetos{
+.projeto{
+  background-color: var(--background);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 880px;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0 8vh;
+  gap: 20px;
 }
 
-.card-pj{
+/* .projeto:nth-child(1){
+  margin-left: 0;
+} */
+
+.projeto-img{
+  height: 200px;
+  border-radius: 10px;
+  transition: 0.35s all;
+}
+
+.projeto-description{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-  height: 300px;
-  width: 320px;
-  overflow: hidden;
-  position: relative;
-}
-.card-pj img{ width: 100%; }
-
-.card-pj p{
-text-align: center;
-padding-bottom: 5px;
-font-size: 18px;
-letter-spacing: -0.5px;
-font-weight: 700;
-color: var(--text);
+  justify-content: space-around;
 }
 
-.card-pj span:nth-child(3){
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin-top: 250px;
-  width: 100%;
-  left: 15px;
-  text-align: center;
-  position: absolute;
+.projeto-description p{ transform: translateY(-15px); }
+
+.projeto-description p span{
+  font-size: 12px;
+  margin: 0 5px;
+  opacity: .8;
 }
 
-.card-pj a{
-padding: 10px 24px;
-border-radius: 50px;
-cursor: pointer;
-background-color: #ed3654;
+.projeto-footer{ display: flex; justify-content: space-between; }
+
+.p-tecs{ flex-direction: row; }
+
+.p-tecs img{
+  width: 28px;
+  height: 28px;
+  margin-right: 3px;
+  transition: 0.2s all;
 }
 
-.tecs{
-  margin-top: 35%;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 5px;
-  width: 25px;
-  opacity: 0;
-  transition: opacity 0.25s ease-in;
-}
+.p-tecs > img:hover{ transform: scale(1.15) translateY(-5px); }
+.projeto > img:hover{ transform: scale(1.05); }
 
-.card-pj:hover .img-card{ filter: grayscale(100%) blur(1px); }
+.p-links{ font-size: 26px;}
 
-.card-pj:hover p:nth-child(3){ opacity: 1; }
+.p-links a{ padding: 0 15px; }
 
-.card-pj:hover .tecs{ pointer-events: none; opacity: 1; }
+/* CONTATO E FOOTER */
 
 .contact .center{
 align-items: center;
