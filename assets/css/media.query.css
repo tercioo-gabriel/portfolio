@@ -62,7 +62,7 @@
   
   .p-tecs{
     position: absolute;
-    margin-left: -300px;
+    margin-left: -375px;
     pointer-events: none;
   }
   
@@ -223,16 +223,11 @@
     height: 150px;
   }
 
-  .skills .center>p{
-    margin: 0;
-    opacity: 0;
-  }
+  .skills .center>p{ text-align: center; }
 
-  .card1, .card2, .card3, .card4, .card5, .card6{ padding: 25px; }
+  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9, .card10{ padding: 25px; }
 
-  .projeto{
-    max-width: 80vh;
-  }
+  .projeto{ max-width: 80vh; }
 
   .p-links a{ margin: 3px 5px 0 0; }
 

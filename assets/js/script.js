@@ -124,16 +124,18 @@ const css = document.querySelector('.card2');
 const js = document.querySelector('.card3');
 const ts = document.querySelector('.card4');
 const rct = document.querySelector('.card5');
-const nx = document.querySelector('.card6');
-const git = document.querySelector('.card7');
+const styled = document.querySelector('.card6');
+const sql = document.querySelector('.card7');
+const git = document.querySelector('.card8');
 
 const pHtml = document.querySelector('.p1');
 const pCss = document.querySelector('.p2');
 const pJs = document.querySelector('.p3');
 const pTs = document.querySelector('.p4');
 const pRct = document.querySelector('.p5');
-const pNext = document.querySelector('.p6');
-const pGit = document.querySelector('.p7');
+const pStyled = document.querySelector('.p6');
+const pSql = document.querySelector('.p7');
+const pGit = document.querySelector('.p8');
 
 function mouserOverText (tec, p) {
   tec.addEventListener('mouseover', ()=>{
@@ -149,5 +151,6 @@ mouserOverText(css, pCss);
 mouserOverText(js, pJs);
 mouserOverText(ts, pTs);
 mouserOverText(rct, pRct);
-mouserOverText(nx, pNext);
+mouserOverText(styled, pStyled);
+mouserOverText(sql, pSql);
 mouserOverText(git, pGit);
